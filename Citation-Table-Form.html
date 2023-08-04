@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>Washington State - Citations, Table & Form</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include your custom CSS if needed -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ... Javascript Email Field Matching ... -->
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const email = document.getElementById("email");
+            const confirmEmail = document.getElementById("confirmEmail");
+
+            confirmEmail.addEventListener("input", function () {
+                if (email.value !== confirmEmail.value) {
+                    confirmEmail.setCustomValidity("Emails do not match");
+                } else {
+                    confirmEmail.setCustomValidity("");
+                }
+            });
+        });
+    </script>  
+</head>
+
+<body>
+    <!-- Navigation header using Bootstrap Navbar component -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- Website logo with link to Wikipedia -->
+                <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Washington_(state)" target="_blank">
+                    Washington State
+                </a>
+                <!-- Toggler button for mobile navigation -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navigation links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Washington State - Home Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Seattle.html">Seattle - The Capital</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Spokane.html">Spokane</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Tacoma.html">Tacoma</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Citation-Table-Form.html">Citations, Table & Form</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content section using Bootstrap Container -->
+    <section class="container mt-4">
+        <div class="text-center mb-4">
+            <h1>Citations, Table & Form</h1>
+        </div>
+
+        <!-- HTML-coded table -->
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Famous Landmarks in Washington State</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Location</th>
+                            <th>Year Built</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Space Needle</td>
+                            <td>Landmark</td>
+                            <td>Seattle</td>
+                            <td>1962</td>
+                        </tr>
+                        <tr>
+                            <td>Mount Rainier</td>
+                            <td>Mountain</td>
+                            <td>Pierce County</td>
+                            <td>Unknown</td>
+                        </tr>
+                        <tr>
+                            <td>Pike Place Market</td>
+                            <td>Market</td>
+                            <td>Seattle</td>
+                            <td>1907</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form section -->
+    <div class="card mt-4">
+      <div class="card-body">
+          <h2 class="card-title">Contact Us</h2>
+          <form id="contactForm">
+              <div class="mb-3">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+              </div>
+              <div class="mb-3">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              </div>
+              <div class="mb-3">
+                  <label for="confirmEmail" class="form-label">Confirm Email address</label>
+                  <input type="email" class="form-control" id="confirmEmail" placeholder="Confirm your email">
+              </div>
+              <div class="mb-3">
+                  <label for="question" class="form-label">Your Question</label>
+                  <textarea class="form-control" id="question" rows="3" placeholder="Ask your question"></textarea>
+              </div>
+          </form>
+      </div>
+  </div>
+</section>
+
+        <!-- Citations section -->
+        <div class="card mt-4">
+          <div class="card-body">
+              <h2 class="card-title">Citations</h2>
+              <p>Here are the citations for the information and images presented on this website:</p>
+              <ul>
+                  <li>Welcome to Washington State. (n.d.-b).<a href="https://stateofwatourism.com/" target="_blank">https://stateofwatourism.com/</a></li>
+                  <li>Clark, Eugene. "Washington (state, United States)". Encyclopædia Britannica. <a href="https://web.archive.org/web/20130716024212/http://www.britannica.com/EBchecked/topic/636305/Washington/79326/Plant-and-animal-life" target="_blank">https://web.archive.org/web/20130716024212/http://www.britannica.com/EBchecked/topic/636305/Washington/79326/Plant-and-animal-life</a></li>
+                  <li>Welcome to Seattle. (n.d.).<a href="https://www.planetware.com/washington/best-museums-in-seattle-us-wa-188.html" target="_blank">https://www.planetware.com/washington/best-museums-in-seattle-us-wa-188.html</a></li>
+                  <li>"U.S. Census Bureau QuickFacts: Seattle city, Washington". United States Census Bureau. <a href="https://web.archive.org/web/20211026122643/https://www.census.gov/quickfacts/fact/table/seattlecitywashington/PST045219" target="_blank">https://web.archive.org/web/20211026122643/https://www.census.gov/quickfacts/fact/table/seattlecitywashington/PST045219</a></li>
+                  <li>Welcome to Spokane. (n.d.). <a href=" https://unsplash.com/photos/1YPTcW49_-U" target="_blank"> https://unsplash.com/photos/1YPTcW49_-U</a></li>
+                  <li>"QuickFacts: Spokane County, Washington". Census. United States Census Bureau.<a href="https://www.census.gov/quickfacts/fact/table/spokanecountywashington/PST045222?" target="_blank">https://www.census.gov/quickfacts/fact/table/spokanecountywashington/PST045222?</a></li>
+                  <li>Welcome to Tacoma. (n.d.). <a href="https://images.unsplash.com/photo-1615440201924-8faf9cb81b52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" target="_blank">https://images.unsplash.com/photo-1615440201924-8faf9cb81b52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80</a></li>
+                  <li>"Explore Census Data". United States Census Bureau.<a href="https://data.census.gov/cedsci/profile?g=1600000US5370000"target="_blank">https://data.census.gov/cedsci/profile?g=1600000US5370000</a></li>
+              </ul>
+          </div>
+      </div>
+  </section>
+
+    <!-- Footer using Bootstrap classes -->
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2023 Fabio Tran</p>
+    </footer>
+
+    <!-- Include Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

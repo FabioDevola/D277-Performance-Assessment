@@ -1,0 +1,39 @@
+/* Task C.1: Text Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Task C.2: Float Property */
+img {
+    float: left;
+    margin-right: 20px;
+}
+
+/* Task C.3: Positioning */
+section {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 70%;
+}
+
+/* Task C.4: Selectors */
+h2 {
+    font-size: 24px;
+}
+
+.city-info {
+    font-style: italic;
+}
+
+#capital-info {
+    font-weight: bold;
+}
+
+.custom-image {
+    max-width: 100%; /* Adjust the value as needed */
+}
