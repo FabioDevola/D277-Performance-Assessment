@@ -37,3 +37,34 @@ h2 {
 .custom-image {
     max-width: 100%; /* Adjust the value as needed */
 }
+
+/* Absolute positioning for image captions */
+.image-caption {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show caption on image hover */
+td:hover .image-caption {
+    opacity: 1;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+#errorText {
+    color: red;
+    animation: blink 1s;
+}
+
