@@ -12,21 +12,22 @@
     <!-- Include your custom CSS if needed -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- ... Javascript Email Field Matching ... -->
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const email = document.getElementById("email");
-            const confirmEmail = document.getElementById("confirmEmail");
+<!-- Javascript Email Field Matching -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const email = document.getElementById("email");
+    const confirmEmail = document.getElementById("confirmEmail");
+    const errorText = document.getElementById("errorText");
 
-            confirmEmail.addEventListener("input", function () {
-                if (email.value !== confirmEmail.value) {
-                    confirmEmail.setCustomValidity("Emails do not match");
-                } else {
-                    confirmEmail.setCustomValidity("");
-                }
-            });
-        });
-    </script>  
+    confirmEmail.addEventListener("input", function () {
+        if (email.value !== confirmEmail.value) {
+            errorText.style.opacity = 1; // Show the error message
+        } else {
+            errorText.style.opacity = 0; // Hide the error message
+        }
+    });
+});
+</script>
 </head>
 
 <body>
@@ -136,6 +137,10 @@
                   <label for="question" class="form-label">Your Question</label>
                   <textarea class="form-control" id="question" rows="3" placeholder="Ask your question"></textarea>
               </div>
+                          <!-- Email Error Code for Mismatched Email -->
+                          <div class="mb-3" id="emailError">
+                            <span id="errorText" class="text-danger" style="opacity: 0;">Emails do not match</span>
+                        </div>                                            
           </form>
       </div>
   </div>
